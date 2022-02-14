@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactUs = () => {
+  const [state, handleSubmit] = useForm("xnqwdjvw");
   return (
     <Container>
       <div className="container">
@@ -35,28 +37,71 @@ const ContactUs = () => {
               and we will handle all of the rest.
             </p>
 
-            <form action="#">
+            <form action="https://formspree.io/f/xnqwdjvw" method="POST">
               <div className="input__box">
-                <input type="text" placeholder="Insert Your Name" />
+                <input
+                  type="text"
+                  placeholder="Insert Your Name"
+                  id="name"
+                  name="name"
+                  required
+                />
+
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
+                />
               </div>
 
               <div className="input__box">
                 <input
                   type="phone-number"
                   placeholder="Insert Your Whatsapp Number"
+                  id="phone number"
+                  name="phone number"
+                  required
+                />
+
+                <ValidationError
+                  prefix="Phone Number"
+                  field="phone number"
+                  errors={state.errors}
                 />
               </div>
 
               <div className="input__box">
-                <input type="text" placeholder="Insert Your Country" />
+                <input
+                  type="text"
+                  placeholder="Insert Your Country"
+                  name="country"
+                  id="country"
+                  required
+                />
+
+                <ValidationError
+                  prefix="Country"
+                  field="country"
+                  errors={state.errors}
+                />
               </div>
 
               <div className="input__box message__box">
-                <textarea placeholder="Insert Your Message" />
+                <textarea
+                  placeholder="Insert Your Message"
+                  id="message"
+                  name="message"
+                  required
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
 
               <div className="button__container">
-                <button className="btn">
+                <button className="btn" disabled={state.submitting}>
                   Send <i className="ri-send-plane-fill send__icon"></i>
                 </button>
               </div>
@@ -104,7 +149,7 @@ const Container = styled.div`
   }
 
   .left__side::before {
-    content: '';
+    content: "";
     position: absolute;
     right: -15px;
     top: 50%;
@@ -197,16 +242,16 @@ const Container = styled.div`
   }
 
   .btn {
-    font-size: 1.10rem;
-    padding: .75rem 1rem;
-    border-radius: .5rem;
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--dark-red);
     color: var(--white-color);
-    column-gap: .5rem;
-    transition: all .3s ease;
+    column-gap: 0.5rem;
+    transition: all 0.3s ease;
   }
 
   .btn:hover {
@@ -218,16 +263,14 @@ const Container = styled.div`
     font-size: 1.5rem;
   }
 
-  @media screen and (max-width: 950px)
-  {
+  @media screen and (max-width: 950px) {
     .container {
       width: 90%;
       padding: 30px 35px 40px 35px;
     }
   }
 
-  @media screen and (max-width: 820px)
-  {
+  @media screen and (max-width: 820px) {
     .container {
       margin: 40px 0;
       height: 100%;
@@ -255,15 +298,13 @@ const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 386px)
-  {
+  @media screen and (max-width: 386px) {
     .topic__text {
       font-size: 1.5rem;
     }
   }
 
-  @media screen and (max-width: 386px)
-  {
+  @media screen and (max-width: 386px) {
     .topic__text {
       font-size: 1.25rem;
     }
