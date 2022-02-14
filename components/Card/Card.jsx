@@ -73,7 +73,7 @@ const Container = styled.div`
     overflow: hidden;
     margin-bottom: var(--mb-1);
     margin-top: var(--mb-0-5);
-    border: 3px solid var(--light-blue);
+    border: 3px solid var(--dark-red);
   }
 
   .profile__data {
