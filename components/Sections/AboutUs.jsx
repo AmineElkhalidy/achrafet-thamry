@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
-// import AmineImage from '../../src/assets/images/amine.jpg';
+import AmineImage from '../../src/assets/images/handsome-avatar.png';
 import AshrafImage from "../../src/assets/images/ashraf.jpeg";
 import styled from "styled-components";
 
@@ -20,7 +20,7 @@ const INFO = [
   },
   {
     id: "I2",
-    image: AshrafImage,
+    image: AmineImage,
     name: "Amine Elkhalidy",
     profession: "FullStack Developer",
     description:
@@ -44,12 +44,14 @@ const AboutUs = () => {
         <div className="about__data">
           <p className="about__data-description">
             We will provide you with almost everything about us:
-            <br />
-            Who we are ?,
-            <br />
-            What is our academic track ?, <br />
-            How can you reach us ?, <br /> and more, and this all done for you
-            to feel more secure, and to be certain that we are reliable.
+            <div className="sentence__container">Who we are ?</div>
+            <div className="sentence__container">
+              What is our academic track ?
+            </div>
+            <div className="sentence__container">How can you reach us ?</div>
+            and more, and this all done for you to feel more{" "}
+            <span className="special__word">secure</span>, and to be certain
+            that we are <span className="special__word">reliable</span>.
           </p>
         </div>
 
@@ -95,6 +97,11 @@ const Section = styled.section`
 
   .about__data-description {
     text-align: center;
+  }
+
+  .special__word {
+    color: var(--dark-red);
+    font-weight: 500;
   }
 
   .info__container {
