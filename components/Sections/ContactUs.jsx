@@ -41,7 +41,7 @@ const ContactUs = () => {
               <div className="input__box">
                 <input
                   type="text"
-                  placeholder="Insert Your Name"
+                  placeholder="Your Name"
                   id="name"
                   name="name"
                   required
@@ -57,7 +57,7 @@ const ContactUs = () => {
               <div className="input__box">
                 <input
                   type="phone-number"
-                  placeholder="Insert Your Whatsapp Number"
+                  placeholder="Your Whatsapp Number"
                   id="phone number"
                   name="phone number"
                   required
@@ -73,7 +73,7 @@ const ContactUs = () => {
               <div className="input__box">
                 <input
                   type="text"
-                  placeholder="Insert Your Country"
+                  placeholder="Your Country"
                   name="country"
                   id="country"
                   required
@@ -88,7 +88,7 @@ const ContactUs = () => {
 
               <div className="input__box message__box">
                 <textarea
-                  placeholder="Insert Your Message"
+                  placeholder="Your Message"
                   id="message"
                   name="message"
                   required
