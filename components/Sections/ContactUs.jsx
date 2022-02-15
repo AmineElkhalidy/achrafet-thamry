@@ -252,6 +252,7 @@ const Container = styled.div`
     color: var(--white-color);
     column-gap: 0.5rem;
     transition: all 0.3s ease;
+    font-weight: 500;
   }
 
   .btn:hover {

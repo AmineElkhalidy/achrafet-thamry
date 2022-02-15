@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card/Card";
 import AmineImage from '../../src/assets/images/handsome-avatar.png';
-import AshrafImage from "../../src/assets/images/ashraf.jpeg";
+import AshrafImage from "../../src/assets/images/ashraf.jpg";
 import styled from "styled-components";
 
 const INFO = [
@@ -11,7 +11,7 @@ const INFO = [
     name: "Ashraf Etthamry",
     profession: "Student Of Low",
     description:
-      "Hello, I am Ashraf, I am a student of low. Because I do not know what to write exactly, I will continue with BLA BLA BLA BLA BLA",
+      "Hello, I am Ashraf, I am a student of low. Because I do not know what to write exactly, I will continue with BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA",
     phoneNumber: "+212670281848",
     email: "etthamryachraf@gmail.com",
     facebookLink: "#",
@@ -42,17 +42,17 @@ const AboutUs = () => {
       </h2>
       <div className="aboutUs__container container grid">
         <div className="about__data">
-          <p className="about__data-description">
+          <div className="about__data-description">
             We will provide you with almost everything about us:
-            <div className="sentence__container">Who we are ?</div>
-            <div className="sentence__container">
+            <p className="sentence__container">Who we are ?</p>
+            <p className="sentence__container">
               What is our academic track ?
-            </div>
-            <div className="sentence__container">How can you reach us ?</div>
+            </p>
+            <p className="sentence__container">How can you reach us ?</p>
             and more, and this all done for you to feel more{" "}
             <span className="special__word">secure</span>, and to be certain
             that we are <span className="special__word">reliable</span>.
-          </p>
+          </div>
         </div>
 
         <div className="info__container">
@@ -96,7 +96,11 @@ const Section = styled.section`
   }
 
   .about__data-description {
-    text-align: center;
+    text-align: left;
+  }
+
+  .sentence__container {
+    color: var(--dark-red);
   }
 
   .special__word {
