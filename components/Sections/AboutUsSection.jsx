@@ -11,7 +11,7 @@ const INFO = [
     name: "Ashraf Etthamry",
     profession: "Student Of Low",
     description:
-      "Hello, I am Ashraf, I am a student of low. Because I do not know what to write exactly, I will continue with BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA",
+      "Hello, I am Ashraf, I am a student of low in Caddy-Ayad university.I have a big interest in business and commerce, and i have a huge ambition to start my own business, also I love writing and i have many stories.I am specialized in making vegan products that you'll find in the products page",
     phoneNumber: "+212670281848",
     email: "etthamryachraf@gmail.com",
     facebookLink: "#",

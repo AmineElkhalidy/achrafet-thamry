@@ -55,12 +55,7 @@ const Container = styled.div`
   // height: 510px;
   // width: 320px;
   height: fit-content;
-<<<<<<< HEAD
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.3) 0px 15px 12px;
-=======
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-  rgba(0, 0, 0, 0.3) 0px 15px 12px;
->>>>>>> d8d9216201df0fa6223b2da7aa0695e94e75384e
   background-color: var(--dark-blue);
   margin-bottom: var(--mb-1-5);
   padding: 0.5rem;
@@ -80,15 +75,12 @@ const Container = styled.div`
     border: 3px solid var(--dark-red);
   }
 
-<<<<<<< HEAD
   .image {
     width: 100%;
     height: 100%;
     object-fit: "contain";
   }
 
-=======
->>>>>>> d8d9216201df0fa6223b2da7aa0695e94e75384e
   .profile__data {
     width: 100%;
     display: flex;
