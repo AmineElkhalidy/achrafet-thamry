@@ -109,9 +109,9 @@ const HomeSection = () => {
               handle it.
             </p>
 
-            <a className="button" href="#">
+            <Link className="button" to="/aboutUs">
               About Us
-            </a>
+            </Link>
           </div>
 
           <img src={AshrafImage} alt="About us Logo" className="about__img" />
@@ -189,9 +189,9 @@ const HomeSection = () => {
           </div>
 
           <div className="contact__button">
-            <a href="#" className="button">
+            <Link to="/contactUs" className="button">
               Contact us now
-            </a>
+            </Link>
           </div>
         </div>
       </section>
