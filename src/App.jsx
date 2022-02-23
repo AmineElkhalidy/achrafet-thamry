@@ -2,10 +2,10 @@ import React from "react";
 import Header from "../components/Layout/Header/Header";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
+import Home from "../components/Sections/Home";
+import Products from "../components/Sections/Products";
+import AboutUs from "../components/Sections/AboutUs";
+import ContactUs from "../components/Sections/ContactUs";
 
 function App() {
   return (

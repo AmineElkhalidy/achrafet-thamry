@@ -10,6 +10,7 @@
   --light-blue: hsl(244, 42%, 49%);
   --orange-color: hsl(31, 100%, 62%);
   --dark-red: hsl(9, 100%, 50%);
+  --dark-red: hsl(9, 100%, 50%);
   --white-color: hsl(0, 0%, 100%);
   --black-color: hsl(0, 0%, 0%);
 
@@ -460,58 +461,67 @@ button {
 
 /* ---------- MEDIA QUERIES ---------- */
 @media screen and (max-width: 340px) {
-  .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+  /* ---------- MEDIA QUERIES ---------- */
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-left: var(--mb-1);
+      margin-right: var(--mb-1);
+    }
+
+    .section__title {
+      font-size: var(--biggest-font-size);
+    }
   }
 
-  .section__title {
-    font-size: var(--biggest-font-size);
+  /* For Medium Screens */
+  /* For medium devices */
+  @media screen and (min-width: 568px) {
+    .footer__container,
+    .home__container,
+    .about__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    .about__container {
+      column-gap: 1.5rem;
+    }
+
+    .products__container {
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      align-content: center;
+      gap: 1.5rem;
+    }
+
+    .about__data,
+    .about__initial,
+    .contact__container,
+    .contact__initial {
+      text-align: initial;
+    }
+
+    .about__img {
+      width: 380px;
+      order: -1;
+    }
+
+    .contact__container {
+      grid-template-columns: 1.75fr 1fr;
+      align-items: center;
+    }
+
+    .contact__button {
+      justify-self: center;
+    }
   }
 }
 
 /* For Medium Screens */
-/* For medium devices */
-@media screen and (min-width: 568px) {
-  .footer__container,
-  .home__container,
-  .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-
-  .about__container {
-    column-gap: 1.5rem;
-  }
-
-  .products__container {
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    align-content: center;
-    gap: 1.5rem;
-  }
-
-  .about__data,
-  .about__initial,
-  .contact__container,
-  .contact__initial {
-    text-align: initial;
-  }
-
-  .about__img {
-    width: 380px;
-    order: -1;
-  }
-
-  .contact__container {
-    grid-template-columns: 1.75fr 1fr;
-    align-items: center;
-  }
-
-  .contact__button {
-    justify-self: center;
-  }
+/* @media screen and (min-width: 576px) {
+  
 }
+*/
 
 @media screen and (min-width: 767px) {
   /* body {
