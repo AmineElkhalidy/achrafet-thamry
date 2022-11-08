@@ -1,5 +1,5 @@
 /* ---------- GOOGLE FONTS ---------- */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap");
 
 /* ---------- CSS VARIABLES ---------- */
 :root {
@@ -15,7 +15,7 @@
   --black-color: hsl(0, 0%, 0%);
 
   /* Font Sizes */
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Cairo", sans-serif;
   --biggest-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
