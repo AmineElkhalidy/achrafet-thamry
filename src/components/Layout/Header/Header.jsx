@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import LogoImage from "../../../src/assets/images/Ashraf.png";
+import LogoImage from "../../../assets/images/Ashraf.png";
 
 const Header = () => {
   useEffect(() => {
