@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Products from "./pages/Products";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
-
+import Footer from "../components/Sections/Footer";
 function App() {
   return (
     <>
@@ -20,6 +20,8 @@ function App() {
             <Route path="/contactUs" exact element={<ContactUs />} />
           </Routes>
         </main>
+
+        <Footer />
       </Router>
     </>
   );

@@ -128,11 +128,11 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--dark-blue);
 
   .container {
     width: 80%;
-    background-color: var(--white-color);
-    background-color: var(--dark-blue);
+    background-color: #202434;
     border-radius: 10px;
     padding: 30px 60px 40px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
