@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const HomeSection = () => {
   return (
     <>
-      <section className="services section container">
+      {/* <section className="services section container">
         <span className="section__subtitle">Offering</span>
         <h2 className="section__title">Our amazing services</h2>
 
@@ -83,9 +83,7 @@ const HomeSection = () => {
             </Link>
           </div>
         </div>
-      </section>
-
-      <Footer />
+      </section> */}
     </>
   );
 };
