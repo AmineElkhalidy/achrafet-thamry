@@ -524,10 +524,6 @@ button {
 */
 
 @media screen and (min-width: 767px) {
-  /* body {
-    margin: 0;
-  } */
-
   .section {
     padding: 4rem 0 2rem;
   }

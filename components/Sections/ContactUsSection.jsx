@@ -6,25 +6,34 @@ const ContactUsSection = () => {
   const [state, handleSubmit] = useForm("xnqwdjvw");
   return (
     <Container>
-      <div className="container">
+      <div className="container section">
         <div className="content">
           <div className="left__side">
             <div className="address details">
               <i className="ri-map-pin-fill contactUs__icon"></i>
-              <div className="topic">Address</div>
-              <div className="text__one">Sidi Aissa Ben Slimane</div>
-              <div className="text__two">Elkelaa Des Sraghna</div>
+              <h4 className="topic">Address</h4>
+              <a
+                href="https://www.google.com/maps/place/%D9%85%D8%AF%D8%B1%D8%B3%D8%A9+%D8%A3%D9%88%D9%84%D8%A7%D8%AF+%D8%AE%D8%A7%D9%84%D8%AF+%D8%A7%D9%84%D8%A5%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A%D8%A9,+P2135,+Sidi+Aissa+Ben+Slimane%E2%80%AD/@31.9111776,-7.2182086,15.38z/data=!4m13!1m7!3m6!1s0xda51b973f7dcca5:0x3e0561f8d60b1205!2sSidi+Aissa+Ben+Slimane!3b1!8m2!3d31.9132874!4d-7.2113605!3m4!1s0xda51bac8030e93b:0x77b052860b3ce45a!8m2!3d31.9183941!4d-7.2195303"
+                className="text__one"
+              >
+                Sidi Aissa Ben Slimane - Elkelaa Des Sraghna
+              </a>
+              {/* <div className="text__two"></div> */}
             </div>
             <div className="phone details">
               <i className="ri-phone-fill contactUs__icon"></i>
-              <div className="topic">Phone Number</div>
-              <div className="text__one">+212670281848</div>
+              <h4 className="topic">Phone Number</h4>
+              <a href="tel:+212670281848" className="text__one">
+                +212670281848
+              </a>
             </div>
 
             <div className="phone details">
               <i className="ri-at-line contactUs__icon"></i>
-              <div className="topic">Email Address</div>
-              <div className="text__one">etthamryachraf@gmail.com</div>
+              <h4 className="topic">Email Address</h4>
+              <a href="mailto:etthamryachraf@gmail.com" className="text__one">
+                etthamryachraf@gmail.com
+              </a>
             </div>
           </div>
 
@@ -177,7 +186,7 @@ const Container = styled.div`
 
   .text__one,
   .text__two {
-    font-size: 14px;
+    font-size: 15px;
     color: #f0f1f8;
   }
 
@@ -271,7 +280,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 820px) {
     .container {
-      margin: 40px 0;
+      margin: 20px 0;
       height: 100%;
     }
 
@@ -294,12 +303,6 @@ const Container = styled.div`
     .right__side {
       width: 100%;
       margin-left: 0;
-    }
-  }
-
-  @media screen and (max-width: 386px) {
-    .topic__text {
-      font-size: 1.5rem;
     }
   }
 
