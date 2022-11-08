@@ -141,6 +141,8 @@ button {
 /* Active Link */
 .active-link {
   color: var(--dark-red);
+  letter-spacing: 1.25px;
+  font-weight: var(--font-medium);
 }
 
 /* ---------- HEADER ---------- */

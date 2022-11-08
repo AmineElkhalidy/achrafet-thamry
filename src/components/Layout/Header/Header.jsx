@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import LogoImage from "../../../assets/images/Ashraf.png";
 
 const Header = () => {
@@ -60,19 +60,34 @@ const Header = () => {
         <div className="nav__menu" id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <NavLink to="/products" className="nav__link">
+              <NavLink
+                to="/products"
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "nav__link"
+                }
+              >
                 Products
               </NavLink>
             </li>
 
             <li className="nav__item">
-              <NavLink className="nav__link" to="/aboutUs">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "nav__link"
+                }
+                to="/aboutUs"
+              >
                 About Us
               </NavLink>
             </li>
 
             <li className="nav__item">
-              <NavLink className="nav__link" to="/contactUs">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "nav__link"
+                }
+                to="/contactUs"
+              >
                 Contact Us
               </NavLink>
             </li>
