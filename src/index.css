@@ -323,34 +323,31 @@ button {
 
 /* ---------- MEDIA QUERIES ---------- */
 @media screen and (max-width: 340px) {
-  /* ---------- MEDIA QUERIES ---------- */
-  @media screen and (max-width: 340px) {
-    .container {
-      margin-left: var(--mb-1);
-      margin-right: var(--mb-1);
-    }
-
-    .section__title {
-      font-size: var(--biggest-font-size);
-    }
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
   }
 
-  /* For Medium Screens */
-  /* For medium devices */
-  @media screen and (min-width: 568px) {
-    .footer__container {
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-    }
+  .section__title {
+    font-size: var(--biggest-font-size);
+  }
+}
 
-    .contact__container {
-      grid-template-columns: 1.75fr 1fr;
-      align-items: center;
-    }
+/* For Medium Screens */
+/* For medium devices */
+@media screen and (min-width: 568px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 
-    .contact__button {
-      justify-self: center;
-    }
+  .contact__container {
+    grid-template-columns: 1.75fr 1fr;
+    align-items: center;
+  }
+
+  .contact__button {
+    justify-self: center;
   }
 }
 
