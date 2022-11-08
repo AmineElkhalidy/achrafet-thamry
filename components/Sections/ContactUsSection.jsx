@@ -6,7 +6,7 @@ const ContactUsSection = () => {
   const [state, handleSubmit] = useForm("xnqwdjvw");
   return (
     <Container>
-      <div className="container section">
+      <div className="container">
         <div className="content">
           <div className="left__side">
             <div className="address details">
@@ -129,6 +129,14 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   background-color: var(--dark-blue);
+  padding-bottom: 4rem;
+  border-bottom: 1px solid white;
+
+  @media screen and (min-width: 767px) {
+    & {
+      padding-top: 4rem;
+    }
+  }
 
   .container {
     width: 80%;
