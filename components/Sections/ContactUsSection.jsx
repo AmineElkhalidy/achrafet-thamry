@@ -19,14 +19,12 @@ const ContactUsSection = () => {
               <i className="ri-phone-fill contactUs__icon"></i>
               <div className="topic">Phone Number</div>
               <div className="text__one">+212670281848</div>
-              <div className="text__two">+212611154307</div>
             </div>
 
             <div className="phone details">
               <i className="ri-at-line contactUs__icon"></i>
               <div className="topic">Email Address</div>
               <div className="text__one">etthamryachraf@gmail.com</div>
-              <div className="text__two">elkhalidyamine.a@gmail.com</div>
             </div>
           </div>
 
@@ -73,7 +71,7 @@ const ContactUsSection = () => {
               <div className="input__box">
                 <input
                   type="text"
-                  placeholder="Your Country"
+                  placeholder="Your Email"
                   name="country"
                   id="country"
                   required
@@ -243,7 +241,7 @@ const Container = styled.div`
 
   .btn {
     font-size: 1.1rem;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 2rem;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
@@ -261,7 +259,7 @@ const Container = styled.div`
   }
 
   .send__icon {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   @media screen and (max-width: 950px) {
