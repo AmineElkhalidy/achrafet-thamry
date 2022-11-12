@@ -1,122 +1,142 @@
 import React from "react";
+
+// Styled components
 import styled from "styled-components";
+
+// Helmet
+import { Helmet } from "react-helmet";
+
+// Form spree
 import { useForm, ValidationError } from "@formspree/react";
 
 const ContactUsSection = () => {
+  // Form state
   const [state, handleSubmit] = useForm("xnqwdjvw");
+
   return (
-    <Container>
-      <div className="container">
-        <div className="content">
-          <div className="left__side">
-            <div className="address details">
-              <i className="ri-map-pin-fill contactUs__icon"></i>
-              <h4 className="topic">Address</h4>
-              <a
-                href="https://www.google.com/maps/place/%D9%85%D8%AF%D8%B1%D8%B3%D8%A9+%D8%A3%D9%88%D9%84%D8%A7%D8%AF+%D8%AE%D8%A7%D9%84%D8%AF+%D8%A7%D9%84%D8%A5%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A%D8%A9,+P2135,+Sidi+Aissa+Ben+Slimane%E2%80%AD/@31.9111776,-7.2182086,15.38z/data=!4m13!1m7!3m6!1s0xda51b973f7dcca5:0x3e0561f8d60b1205!2sSidi+Aissa+Ben+Slimane!3b1!8m2!3d31.9132874!4d-7.2113605!3m4!1s0xda51bac8030e93b:0x77b052860b3ce45a!8m2!3d31.9183941!4d-7.2195303"
-                className="text__one"
-              >
-                Sidi Aissa Ben Slimane - Elkelaa Des Sraghna
-              </a>
-              {/* <div className="text__two"></div> */}
+    <>
+      <Helmet>
+        <meta
+          name="description"
+          content="If you liked our products and you want to purchase them, do not hesitate to use the resource listed below or the form..."
+        />
+
+        <title>Contact Us</title>
+      </Helmet>
+
+      <Container>
+        <div className="container">
+          <div className="content">
+            <div className="left__side">
+              <div className="address details">
+                <i className="ri-map-pin-fill contactUs__icon"></i>
+                <h4 className="topic">Address</h4>
+                <a
+                  href="https://www.google.com/maps/place/%D9%85%D8%AF%D8%B1%D8%B3%D8%A9+%D8%A3%D9%88%D9%84%D8%A7%D8%AF+%D8%AE%D8%A7%D9%84%D8%AF+%D8%A7%D9%84%D8%A5%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A%D8%A9,+P2135,+Sidi+Aissa+Ben+Slimane%E2%80%AD/@31.9111776,-7.2182086,15.38z/data=!4m13!1m7!3m6!1s0xda51b973f7dcca5:0x3e0561f8d60b1205!2sSidi+Aissa+Ben+Slimane!3b1!8m2!3d31.9132874!4d-7.2113605!3m4!1s0xda51bac8030e93b:0x77b052860b3ce45a!8m2!3d31.9183941!4d-7.2195303"
+                  className="text__one"
+                >
+                  Sidi Aissa Ben Slimane - Elkelaa Des Sraghna
+                </a>
+                {/* <div className="text__two"></div> */}
+              </div>
+              <div className="phone details">
+                <i className="ri-phone-fill contactUs__icon"></i>
+                <h4 className="topic">Phone Number</h4>
+                <a href="tel:+212670281848" className="text__one">
+                  +212670281848
+                </a>
+              </div>
+
+              <div className="phone details">
+                <i className="ri-at-line contactUs__icon"></i>
+                <h4 className="topic">Email Address</h4>
+                <a href="mailto:etthamryachraf@gmail.com" className="text__one">
+                  etthamryachraf@gmail.com
+                </a>
+              </div>
             </div>
-            <div className="phone details">
-              <i className="ri-phone-fill contactUs__icon"></i>
-              <h4 className="topic">Phone Number</h4>
-              <a href="tel:+212670281848" className="text__one">
-                +212670281848
-              </a>
+
+            <div className="right__side">
+              <div className="topic__text">Get in touch with us</div>
+              <p>
+                If you liked one of the products that we offer to you, contact
+                us and we will handle all of the rest.
+              </p>
+
+              <form action="https://formspree.io/f/xnqwdjvw" method="POST">
+                <div className="input__box">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    id="name"
+                    name="name"
+                    required
+                  />
+
+                  <ValidationError
+                    prefix="Name"
+                    field="name"
+                    errors={state.errors}
+                  />
+                </div>
+
+                <div className="input__box">
+                  <input
+                    type="phone-number"
+                    placeholder="Your Whatsapp Number"
+                    id="phone number"
+                    name="phone number"
+                    required
+                  />
+
+                  <ValidationError
+                    prefix="Phone Number"
+                    field="phone number"
+                    errors={state.errors}
+                  />
+                </div>
+
+                <div className="input__box">
+                  <input
+                    type="text"
+                    placeholder="Your Email"
+                    name="country"
+                    id="country"
+                    required
+                  />
+
+                  <ValidationError
+                    prefix="Country"
+                    field="country"
+                    errors={state.errors}
+                  />
+                </div>
+
+                <div className="input__box message__box">
+                  <textarea
+                    placeholder="Your Message"
+                    id="message"
+                    name="message"
+                    required
+                  />
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
+                </div>
+
+                <div className="button__container">
+                  <button className="btn" disabled={state.submitting}>
+                    Send <i className="ri-send-plane-fill send__icon"></i>
+                  </button>
+                </div>
+              </form>
             </div>
-
-            <div className="phone details">
-              <i className="ri-at-line contactUs__icon"></i>
-              <h4 className="topic">Email Address</h4>
-              <a href="mailto:etthamryachraf@gmail.com" className="text__one">
-                etthamryachraf@gmail.com
-              </a>
-            </div>
-          </div>
-
-          <div className="right__side">
-            <div className="topic__text">Get in touch with us</div>
-            <p>
-              If you liked one of the products that we offer to you, contact us
-              and we will handle all of the rest.
-            </p>
-
-            <form action="https://formspree.io/f/xnqwdjvw" method="POST">
-              <div className="input__box">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  id="name"
-                  name="name"
-                  required
-                />
-
-                <ValidationError
-                  prefix="Name"
-                  field="name"
-                  errors={state.errors}
-                />
-              </div>
-
-              <div className="input__box">
-                <input
-                  type="phone-number"
-                  placeholder="Your Whatsapp Number"
-                  id="phone number"
-                  name="phone number"
-                  required
-                />
-
-                <ValidationError
-                  prefix="Phone Number"
-                  field="phone number"
-                  errors={state.errors}
-                />
-              </div>
-
-              <div className="input__box">
-                <input
-                  type="text"
-                  placeholder="Your Email"
-                  name="country"
-                  id="country"
-                  required
-                />
-
-                <ValidationError
-                  prefix="Country"
-                  field="country"
-                  errors={state.errors}
-                />
-              </div>
-
-              <div className="input__box message__box">
-                <textarea
-                  placeholder="Your Message"
-                  id="message"
-                  name="message"
-                  required
-                />
-                <ValidationError
-                  prefix="Message"
-                  field="message"
-                  errors={state.errors}
-                />
-              </div>
-
-              <div className="button__container">
-                <button className="btn" disabled={state.submitting}>
-                  Send <i className="ri-send-plane-fill send__icon"></i>
-                </button>
-              </div>
-            </form>
           </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 };
 

@@ -1,4 +1,6 @@
 import React from "react";
+
+// Products images
 import ProductOne from "../../assets/products/product-00.jpeg";
 import ProductTwo from "../../assets/products/product-04.jpeg";
 import ProductThree from "../../assets/products/product-05.jpeg";
@@ -20,184 +22,198 @@ import ProductEighteen from "../../assets/products/product-20.jpeg";
 import ProductNineteen from "../../assets/products/product-21.jpeg";
 import ProductTwenty from "../../assets/products/product-22.jpeg";
 import ProductTwentyOne from "../../assets/products/product-23.jpeg";
+
+// Styled component
 import styled from "styled-components";
 
 const ProductsSection = () => {
   return (
-    <Section>
-      <h2 className="section__title">All Products</h2>
-      <div className="products__container container grid">
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+    <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Browse and discover our traditional products that were made using ELQASSAB with garanted quality check..."
+        />
 
-          <img
-            className="product__img"
-            src={ProductOne}
-            alt="The product image"
-          />
+        <title>Products List</title>
+      </Helmet>
 
-          <div className="product__data">
-            <h3 className="product__title">Closet</h3>
-            <span className="product__price">$10.00</span>
-          </div>
+      <Section>
+        <h2 className="section__title">All Products</h2>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+        <div className="products__container container grid">
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductOne}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductTwo}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Closet</h3>
+              <span className="product__price">$10.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Chair</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductTwo}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductThree}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Chair</h3>
+              <span className="product__price">$15.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Idk</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductThree}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductFour}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Idk</h3>
+              <span className="product__price">$15.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Idk</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductFour}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductFive}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Idk</h3>
+              <span className="product__price">$15.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Idk</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductFive}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductSix}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Idk</h3>
+              <span className="product__price">$15.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Idk</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductSix}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductSeven}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Idk</h3>
+              <span className="product__price">$15.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Idk</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductSeven}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductEight}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Idk</h3>
+              <span className="product__price">$15.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Idk</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductEight}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductNine}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Idk</h3>
+              <span className="product__price">$15.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Idk</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
 
-        <article className="product__card">
-          <span className="product__tag">Sale</span>
+            <img
+              className="product__img"
+              src={ProductNine}
+              alt="The product image"
+            />
 
-          <img
-            className="product__img"
-            src={ProductTen}
-            alt="The product image"
-          />
+            <div className="product__data">
+              <h3 className="product__title">Idk</h3>
+              <span className="product__price">$15.00</span>
+            </div>
 
-          <div className="product__data">
-            <h3 className="product__title">Idk</h3>
-            <span className="product__price">$15.00</span>
-          </div>
+            <button className="button product__button">Contact Us</button>
+          </article>
 
-          <button className="button product__button">Contact Us</button>
-        </article>
-      </div>
-    </Section>
+          <article className="product__card">
+            <span className="product__tag">Sale</span>
+
+            <img
+              className="product__img"
+              src={ProductTen}
+              alt="The product image"
+            />
+
+            <div className="product__data">
+              <h3 className="product__title">Idk</h3>
+              <span className="product__price">$15.00</span>
+            </div>
+
+            <button className="button product__button">Contact Us</button>
+          </article>
+        </div>
+      </Section>
+    </>
   );
 };
 
