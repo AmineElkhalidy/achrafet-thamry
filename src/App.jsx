@@ -1,9 +1,14 @@
 import React from "react";
-import Header from "./components/Layout/Header/Header";
+
+// Styling file
 import "./App.css";
+
+// Routing
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Pages
+import Header from "./components/Layout/Header/Header";
+import Home from "./pages/Home";
 import Products from "./pages/Products";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
@@ -16,6 +21,7 @@ function App() {
         <Header />
         <main className="main">
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/products" exact element={<Products />} />
             <Route path="/aboutUs" exact element={<AboutUs />} />
             <Route path="/contactUs" exact element={<ContactUs />} />
