@@ -1,8 +1,6 @@
 import React from "react";
-import Footer from "./Footer";
-import AshrafImage from "../../src/assets/images/ashraf.jpg";
-import ProductOne from "../../src/assets/products/product-00.jpeg";
-import { Link } from "react-router-dom";
+
+// Images
 
 const HomeSection = () => {
   return (
